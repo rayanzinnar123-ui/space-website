@@ -1,23 +1,19 @@
 # 🚀 Space Website
-A simple and responsive space-themed website built with HTML, CSS, and JavaScript. This project showcases a space design with interactive elements and animations. 
-Project Structure:
-space-website/
-├── index.html        # Main landing page
-├── styles.css        # Styles and layout
-└── script.js         # JavaScript for interactivity
-Features:
-- Clean and modern space theme
-- Responsive design (mobile + desktop)
-- Custom styling using CSS
-- Interactive UI elements with JavaScript
-- Easy to expand with additional pages or animations
-Technologies Used:
-- HTML5
-- CSS3
-- JavaScript (ES6)
-How to Use / Run Locally:
-1. Clone the repository: git clone https://github.com/rayanzinnar123-ui/space-website.git
-2. Navigate to the project folder: cd space-website
-3. Open the website: double-click index.html or open it in a browser
-Live Demo: https://space-website-d1wm.onrender.com
 
+A simple and responsive **space-themed website** built using **HTML, CSS, and JavaScript**. This project focuses on clean design and frontend fundamentals, making it suitable for learning purposes, portfolios, or future expansion.
+
+**Project structure:** `index.html` (main page), `styles.css` (styling and layout), and `script.js` (JavaScript interactivity).
+
+**Features:** modern space-inspired design, responsive layout for mobile and desktop, custom CSS styling, JavaScript-powered interactivity, and easy extensibility with additional pages or effects.
+
+**Technologies used:** HTML5, CSS3, JavaScript (ES6).
+
+**Run locally:** clone the repository using `git clone https://github.com/rayanzinnar123-ui/space-website.git`, open the project folder, and launch `index.html` in your browser.
+
+**Live demo (optional):** `https://space-website-d1wm.onrender.com`.
+
+**Future improvements:** add more pages (About, Contact, Gallery), introduce animations or transitions, improve mobile navigation, and enhance accessibility.
+
+**Contributing:** fork the repository, create a feature branch, commit your changes, push them, and open a pull request.
+
+**License:** this project is open-source under the **MIT License**.
