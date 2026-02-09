@@ -10,7 +10,7 @@ A simple and responsive **space-themed website** built using **HTML, CSS, and Ja
 
 **Run locally:** clone the repository using `git clone https://github.com/rayanzinnar123-ui/space-website.git`, open the project folder, and launch `index.html` in your browser.
 
-**Live demo (optional):** `https://space-website-d1wm.onrender.com`.
+**Live demo (optional):** https://space-website-d1wm.onrender.com.
 
 **Future improvements:** add more pages (About, Contact, Gallery), introduce animations or transitions, improve mobile navigation, and enhance accessibility.
 
