@@ -12,8 +12,4 @@ A simple and responsive **space-themed website** built using **HTML, CSS, and Ja
 
 **Live demo (optional):** https://space-website-d1wm.onrender.com.
 
-**Future improvements:** add more pages (About, Contact, Gallery), introduce animations or transitions, improve mobile navigation, and enhance accessibility.
-
-**Contributing:** fork the repository, create a feature branch, commit your changes, push them, and open a pull request.
-
-**License:** this project is open-source under the **MIT License**.
+**Future improvements:** add more pages and enhance accessibility.
