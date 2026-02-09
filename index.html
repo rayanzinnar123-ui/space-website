@@ -136,56 +136,75 @@
     </div>
   </section>
 
-  <!-- Exploration Timeline -->
+  <!-- Exploration Section -->
   <section class="exploration" id="exploration">
     <div class="container">
       <div class="section-header">
         <span class="section-label">Human Achievement</span>
         <h2 class="section-title">Space Exploration</h2>
       </div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-date">1957</div>
-          <div class="timeline-content">
-            <h3>Sputnik 1</h3>
-            <p>The Soviet Union launches the first artificial satellite, marking the start of the Space Age.</p>
+      <div class="milestones-track">
+        <div class="milestones-scroll" id="milestonesScroll">
+          <div class="milestone-card">
+            <div class="milestone-year">1957</div>
+            <div class="milestone-dot"></div>
+            <div class="milestone-body">
+              <span class="milestone-tag">The Beginning</span>
+              <h3>Sputnik 1</h3>
+              <p>The Soviet Union launches the first artificial satellite, marking the dawn of the Space Age and igniting the space race.</p>
+            </div>
+          </div>
+          <div class="milestone-card">
+            <div class="milestone-year">1961</div>
+            <div class="milestone-dot"></div>
+            <div class="milestone-body">
+              <span class="milestone-tag">First Flight</span>
+              <h3>Human in Space</h3>
+              <p>Yuri Gagarin becomes the first human to journey into outer space aboard Vostok 1, orbiting Earth in 108 minutes.</p>
+            </div>
+          </div>
+          <div class="milestone-card">
+            <div class="milestone-year">1969</div>
+            <div class="milestone-dot"></div>
+            <div class="milestone-body">
+              <span class="milestone-tag">Giant Leap</span>
+              <h3>Moon Landing</h3>
+              <p>Neil Armstrong and Buzz Aldrin become the first humans to walk on the Moon during the Apollo 11 mission.</p>
+            </div>
+          </div>
+          <div class="milestone-card">
+            <div class="milestone-year">1990</div>
+            <div class="milestone-dot"></div>
+            <div class="milestone-body">
+              <span class="milestone-tag">New Eyes</span>
+              <h3>Hubble Telescope</h3>
+              <p>NASA launches the Hubble Space Telescope, giving humanity its most stunning views of the distant universe.</p>
+            </div>
+          </div>
+          <div class="milestone-card">
+            <div class="milestone-year">2012</div>
+            <div class="milestone-dot"></div>
+            <div class="milestone-body">
+              <span class="milestone-tag">Red Planet</span>
+              <h3>Curiosity Rover</h3>
+              <p>NASA's Curiosity rover touches down on Mars, beginning its mission to study the planet's climate and geology.</p>
+            </div>
+          </div>
+          <div class="milestone-card">
+            <div class="milestone-year">2021</div>
+            <div class="milestone-dot"></div>
+            <div class="milestone-body">
+              <span class="milestone-tag">Deep Space</span>
+              <h3>James Webb</h3>
+              <p>The most powerful space telescope ever built launches, designed to peer back in time to the universe's earliest galaxies.</p>
+            </div>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-date">1961</div>
-          <div class="timeline-content">
-            <h3>First Human in Space</h3>
-            <p>Yuri Gagarin becomes the first human to journey into outer space aboard Vostok 1.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">1969</div>
-          <div class="timeline-content">
-            <h3>Moon Landing</h3>
-            <p>Neil Armstrong and Buzz Aldrin become the first humans to walk on the Moon during Apollo 11.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">1990</div>
-          <div class="timeline-content">
-            <h3>Hubble Space Telescope</h3>
-            <p>NASA launches the Hubble, revolutionizing our view of the universe.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">2012</div>
-          <div class="timeline-content">
-            <h3>Curiosity on Mars</h3>
-            <p>NASA's Curiosity rover lands on Mars to study the planet's climate and geology.</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-date">2021</div>
-          <div class="timeline-content">
-            <h3>James Webb Telescope</h3>
-            <p>The most powerful space telescope ever built launches to peer into the early universe.</p>
-          </div>
-        </div>
+      </div>
+      <div class="milestones-controls">
+        <button class="milestone-arrow" id="scrollLeft" aria-label="Scroll left">&#8592;</button>
+        <div class="milestone-dots-nav" id="milestoneDots"></div>
+        <button class="milestone-arrow" id="scrollRight" aria-label="Scroll right">&#8594;</button>
       </div>
     </div>
   </section>

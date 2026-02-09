@@ -76,7 +76,7 @@ function initSmoothScroll() {
 // ============================================
 function initScrollReveal() {
   const revealElements = document.querySelectorAll(
-    '.about-card, .planet-card, .timeline-item, .fact-card, .section-header'
+    '.about-card, .planet-card, .milestone-card, .fact-card, .section-header'
   );
   
   revealElements.forEach(el => el.classList.add('reveal'));
@@ -174,6 +174,63 @@ function initParallaxStars() {
 }
 
 // ============================================
+// Milestones Horizontal Scroll
+// ============================================
+function initMilestones() {
+  const track = document.querySelector('.milestones-track');
+  const scroll = document.getElementById('milestonesScroll');
+  const cards = document.querySelectorAll('.milestone-card');
+  const leftBtn = document.getElementById('scrollLeft');
+  const rightBtn = document.getElementById('scrollRight');
+  const dotsContainer = document.getElementById('milestoneDots');
+
+  if (!track || !scroll || cards.length === 0) return;
+
+  // Create nav dots
+  cards.forEach((_, i) => {
+    const dot = document.createElement('span');
+    dot.className = 'dot' + (i === 0 ? ' active' : '');
+    dot.addEventListener('click', () => {
+      cards[i].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    });
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = dotsContainer.querySelectorAll('.dot');
+
+  // Update active dot based on scroll position
+  function updateDots() {
+    const trackRect = track.getBoundingClientRect();
+    const center = trackRect.left + trackRect.width / 2;
+    let closestIndex = 0;
+    let closestDist = Infinity;
+
+    cards.forEach((card, i) => {
+      const cardRect = card.getBoundingClientRect();
+      const cardCenter = cardRect.left + cardRect.width / 2;
+      const dist = Math.abs(cardCenter - center);
+      if (dist < closestDist) {
+        closestDist = dist;
+        closestIndex = i;
+      }
+    });
+
+    dots.forEach((d, i) => d.classList.toggle('active', i === closestIndex));
+  }
+
+  track.addEventListener('scroll', updateDots);
+
+  // Arrow buttons
+  const scrollAmount = 300;
+  leftBtn.addEventListener('click', () => {
+    track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+  rightBtn.addEventListener('click', () => {
+    track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+}
+
+// ============================================
 // Initialize Everything
 // ============================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -185,6 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initPlanetCards();
   initHeaderScroll();
   initParallaxStars();
+  initMilestones();
 });
 
 // Regenerate stars on window resize
