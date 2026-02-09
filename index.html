@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exploring the Cosmos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Stars Background -->
+  <div class="stars" id="stars"></div>
+  
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">
+        <span class="logo-icon">&#9733;</span>
+        <span class="logo-text">Cosmos</span>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#planets">Planets</a></li>
+        <li><a href="#exploration">Exploration</a></li>
+        <li><a href="#facts">Facts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-subtitle">Journey Beyond Earth</p>
+      <h1 class="hero-title">Exploring the<br><span class="highlight">Infinite Cosmos</span></h1>
+      <p class="hero-description">
+        Space is the boundless three-dimensional extent in which objects and events 
+        have relative position and direction. Discover the mysteries that lie beyond our world.
+      </p>
+      <a href="#about" class="cta-button">Begin Your Journey</a>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">About Space</span>
+        <h2 class="section-title">The Universe Awaits</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="card-icon">&#9790;</div>
+          <h3>The Observable Universe</h3>
+          <p>The observable universe is a spherical region of the universe consisting of all matter that can be observed from Earth. It has a diameter of approximately 93 billion light-years.</p>
+        </div>
+        <div class="about-card">
+          <div class="card-icon">&#9788;</div>
+          <h3>Stars & Galaxies</h3>
+          <p>There are an estimated 100-400 billion stars in our Milky Way galaxy alone, and over 2 trillion galaxies in the observable universe.</p>
+        </div>
+        <div class="about-card">
+          <div class="card-icon">&#9052;</div>
+          <h3>Dark Matter</h3>
+          <p>About 27% of the universe is dark matter. It does not emit, absorb, or reflect light, making it extremely hard to detect directly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planets Section -->
+  <section class="planets" id="planets">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Our Solar System</span>
+        <h2 class="section-title">The Planets</h2>
+      </div>
+      <div class="planets-grid">
+        <div class="planet-card" data-planet="mercury">
+          <div class="planet-visual mercury"></div>
+          <h3>Mercury</h3>
+          <p>The smallest planet and closest to the Sun. A year on Mercury is just 88 Earth days.</p>
+          <span class="planet-stat">Distance: 57.9M km</span>
+        </div>
+        <div class="planet-card" data-planet="venus">
+          <div class="planet-visual venus"></div>
+          <h3>Venus</h3>
+          <p>The hottest planet with surface temperatures over 450°C. It rotates backwards.</p>
+          <span class="planet-stat">Distance: 108.2M km</span>
+        </div>
+        <div class="planet-card" data-planet="earth">
+          <div class="planet-visual earth"></div>
+          <h3>Earth</h3>
+          <p>Our home. The only known planet to harbor life, with liquid water on its surface.</p>
+          <span class="planet-stat">Distance: 149.6M km</span>
+        </div>
+        <div class="planet-card" data-planet="mars">
+          <div class="planet-visual mars"></div>
+          <h3>Mars</h3>
+          <p>The Red Planet. Home to the largest volcano and canyon in the solar system.</p>
+          <span class="planet-stat">Distance: 227.9M km</span>
+        </div>
+        <div class="planet-card" data-planet="jupiter">
+          <div class="planet-visual jupiter"></div>
+          <h3>Jupiter</h3>
+          <p>The largest planet. Its Great Red Spot is a storm larger than Earth.</p>
+          <span class="planet-stat">Distance: 778.5M km</span>
+        </div>
+        <div class="planet-card" data-planet="saturn">
+          <div class="planet-visual saturn"></div>
+          <h3>Saturn</h3>
+          <p>Famous for its stunning ring system made of ice and rock particles.</p>
+          <span class="planet-stat">Distance: 1.4B km</span>
+        </div>
+        <div class="planet-card" data-planet="uranus">
+          <div class="planet-visual uranus"></div>
+          <h3>Uranus</h3>
+          <p>An ice giant that rotates on its side, with 27 known moons.</p>
+          <span class="planet-stat">Distance: 2.9B km</span>
+        </div>
+        <div class="planet-card" data-planet="neptune">
+          <div class="planet-visual neptune"></div>
+          <h3>Neptune</h3>
+          <p>The windiest planet with storms reaching 2,100 km/h.</p>
+          <span class="planet-stat">Distance: 4.5B km</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exploration Timeline -->
+  <section class="exploration" id="exploration">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Human Achievement</span>
+        <h2 class="section-title">Space Exploration</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">1957</div>
+          <div class="timeline-content">
+            <h3>Sputnik 1</h3>
+            <p>The Soviet Union launches the first artificial satellite, marking the start of the Space Age.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">1961</div>
+          <div class="timeline-content">
+            <h3>First Human in Space</h3>
+            <p>Yuri Gagarin becomes the first human to journey into outer space aboard Vostok 1.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">1969</div>
+          <div class="timeline-content">
+            <h3>Moon Landing</h3>
+            <p>Neil Armstrong and Buzz Aldrin become the first humans to walk on the Moon during Apollo 11.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">1990</div>
+          <div class="timeline-content">
+            <h3>Hubble Space Telescope</h3>
+            <p>NASA launches the Hubble, revolutionizing our view of the universe.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2012</div>
+          <div class="timeline-content">
+            <h3>Curiosity on Mars</h3>
+            <p>NASA's Curiosity rover lands on Mars to study the planet's climate and geology.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2021</div>
+          <div class="timeline-content">
+            <h3>James Webb Telescope</h3>
+            <p>The most powerful space telescope ever built launches to peer into the early universe.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facts Section -->
+  <section class="facts" id="facts">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Did You Know?</span>
+        <h2 class="section-title">Amazing Space Facts</h2>
+      </div>
+      <div class="facts-grid">
+        <div class="fact-card">
+          <div class="fact-number">1</div>
+          <p>A day on Venus is longer than a year on Venus. It takes 243 Earth days to rotate once, but only 225 Earth days to orbit the Sun.</p>
+        </div>
+        <div class="fact-card">
+          <div class="fact-number">2</div>
+          <p>There is a planet made of diamonds. 55 Cancri e is believed to be covered in graphite and diamond.</p>
+        </div>
+        <div class="fact-card">
+          <div class="fact-number">3</div>
+          <p>Space is completely silent. Since there is no atmosphere in space, sound has no medium to travel through.</p>
+        </div>
+        <div class="fact-card">
+          <div class="fact-number">4</div>
+          <p>The largest known star, UY Scuti, has a radius around 1,700 times larger than the Sun.</p>
+        </div>
+        <div class="fact-card">
+          <div class="fact-number">5</div>
+          <p>Neutron stars can spin at a rate of 600 rotations per second. They are the densest objects in the universe.</p>
+        </div>
+        <div class="fact-card">
+          <div class="fact-number">6</div>
+          <p>The footprints on the Moon will last for 100 million years because there is no wind to erode them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon">&#9733;</span>
+          <span class="logo-text">Cosmos</span>
+          <p>Exploring the wonders of the universe, one discovery at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#planets">Planets</a></li>
+            <li><a href="#exploration">Exploration</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="https://www.nasa.gov" target="_blank" rel="noopener">NASA</a></li>
+            <li><a href="https://www.esa.int" target="_blank" rel="noopener">ESA</a></li>
+            <li><a href="https://www.spacex.com" target="_blank" rel="noopener">SpaceX</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Made with wonder for the cosmos</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
