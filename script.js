@@ -1,4 +1,26 @@
 // ============================================
+// Preloader
+// ============================================
+function initPreloader() {
+  const preloader = document.getElementById('preloader');
+  if (!preloader) return;
+
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      preloader.classList.add('hidden');
+    }, 1800);
+  });
+
+  // Fallback: remove after 4 seconds regardless
+  setTimeout(() => {
+    preloader.classList.add('hidden');
+  }, 4000);
+}
+
+// Run preloader immediately (before DOMContentLoaded)
+initPreloader();
+
+// ============================================
 // Stars Background Generator
 // ============================================
 function createStars() {
